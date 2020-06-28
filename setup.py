@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="brickulator", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Andy Burton",
     author_email="tuglyraisin-NOPE-@gmail.com",
     description="A library for calculating bricks.",
