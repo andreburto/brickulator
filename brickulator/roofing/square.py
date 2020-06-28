@@ -1,3 +1,6 @@
+# Local imports
+from brickulator.utils import peg_perimeter
+
 # All functions in this file assume the roof is a square.
 ROOFING_SIDES = 4
 # The smallest widths of a four-sided roof which would require corner slopes.
@@ -14,12 +17,6 @@ def peg_width_per_levels(base_width):
         peg_count_per_level.append(int(decrementing_width))
         decrementing_width += decrementer
     return peg_count_per_level
-
-
-def peg_perimeter(side_lengths):
-    """ Calculates how many pegs in length the full parameter is. """
-    # TODO: Account for a square whose sides are less than MINIMUM_SIZE_FOR_CORNERS.
-    return sum(side_lengths) - len(side_lengths)
 
 
 def corners_per_level(side_lengths):

@@ -21,16 +21,6 @@ class TestStringMethods(unittest.TestCase):
         actual_results = square.peg_width_per_levels(base_width)
         self.assertListEqual(expected_results, actual_results)
 
-    def test_peg_perimeter1(self):
-        expected_perimeter = 12
-        actual_perimeter = square.peg_perimeter([4, 4, 4, 4])
-        self.assertEqual(expected_perimeter, actual_perimeter)
-
-    def test_peg_perimeter2(self):
-        expected_perimeter = 12
-        actual_perimeter = square.peg_perimeter([4, 4, 4, 4])
-        self.assertEqual(expected_perimeter, actual_perimeter)
-
     def test_corners_per_level1(self):
         expected_corners = 0
         actual_corners = square.corners_per_level([3, 3, 3, 3])
